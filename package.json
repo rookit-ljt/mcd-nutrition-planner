@@ -1,0 +1,25 @@
+{
+  "name": "mcd-nutrition-planner",
+  "version": "1.0.0",
+  "description": "基于麦当劳官方 MCP 协议打造的低卡/增肌智能营养规划师 Skill",
+  "main": "index.js",
+  "bin": {
+    "mcd-nutrition-planner": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "fat-loss": "node index.js --goal fat-loss --max-calories 500 --min-protein 30",
+    "muscle-gain": "node index.js --goal muscle-gain --max-calories 800 --min-protein 50",
+    "order": "node index.js --goal fat-loss --order"
+  },
+  "keywords": [
+    "mcdonalds",
+    "mcp",
+    "model-context-protocol",
+    "nutrition",
+    "fitness",
+    "skill"
+  ],
+  "author": "Raylan",
+  "license": "MIT"
+}
